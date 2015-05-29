@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=lives
+comment0.target=Nivel03(int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nivel03.\r\n\ \r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ putBricks()
+comment3.params=
+comment3.target=void\ putEnemys()
+comment4.params=
+comment4.target=void\ putOthers()
+comment5.params=
+comment5.target=void\ stopSong()
+comment6.params=
+comment6.target=int\ getLives()
+comment7.params=lives
+comment7.target=void\ setLives(int)
+numComments=8

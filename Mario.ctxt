@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=piso
+comment0.target=Mario(int)
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ keyCheck()
+comment2.text=\r\n\ Key\ Check\r\n
+comment3.params=
+comment3.target=int\ getMarioDir()
+comment4.params=
+comment4.target=void\ fall()
+comment4.text=\r\n\ Fall\r\n
+comment5.params=
+comment5.target=boolean\ onGround()
+comment5.text=\r\n\ On\ Ground\r\n
+comment6.params=
+comment6.target=void\ checkFall()
+comment6.text=\r\n\ Check\ Fall\r\n
+comment7.params=
+comment7.target=boolean\ onBrick()
+comment7.text=\r\n\ On\ Brick\r\n
+numComments=8
