@@ -1,9 +1,11 @@
 #BlueJ class context
 comment0.params=
 comment0.target=gameOver()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ greetings.\r\n\ \r\n
+comment0.text=\r\n\ Constructor\ de\ gameOver\r\n\ \r\n
 comment1.params=
 comment1.target=void\ act()
+comment1.text=\r\n\ En\ el\ M\u00E9todo\ "Act"\ espera\ a\ que\ se\ presione\ Enter\ para\ salir\ de\ la\ pantalla\ de\ game\ Over\r\n\ \r\n
 comment2.params=
 comment2.target=greenfoot.GreenfootSound\ getSong()
+comment2.text=\r\n\ Con\ este\ m\u00E9todo\ se\ regresa\ la\ canci\u00F3n\ que\ se\ toca\ en\ esta\ pantalla\r\n\ \r\n
 numComments=3

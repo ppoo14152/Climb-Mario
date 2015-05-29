@@ -1,13 +1,17 @@
 #BlueJ class context
 comment0.params=brickType\ movementWay\ steps
 comment0.target=Brick(int,\ int,\ int)
+comment0.text=\r\n\ Constructor\ de\ la\ clase\ Brick,\ recibe\ como\ par\u00E1metro\ si\ es\ fijo\ o\ est\u00E1\ en\ movimiento,\ hacia\ \r\n\ d\u00F3nde\ se\ empieza\ a\ mover\ y\ cuantos\ pasos\ se\ debe\ mover\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Brick\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\r\n\ En\ el\ metodo\ "Act"\ movemos\ el\ ladrillo\ en\ caso\ que\ sea\ de\ tipo\ de\ movimiento\r\n\ \r\n
 comment2.params=
 comment2.target=void\ moveBrick()
+comment2.text=\r\n\ Este\ es\ el\ m\u00E9todo\ cambiamos\ la\ direcci\u00F3n\ con\ la\ que\ se\ mueve\ el\ ladrillo\r\n\ \r\n
 comment3.params=
 comment3.target=void\ moveRight()
+comment3.text=\r\n\ Con\ este\ m\u00E9todo\ movemos\ el\ ladrillo\ hacia\ la\ derecha\r\n\ \r\n
 comment4.params=
 comment4.target=void\ moveLeft()
+comment4.text=\r\n\ Con\ este\ m\u00E9todo\ movemos\ el\ ladrillo\ hacia\ la\ Izquierda\r\n\ \r\n
 numComments=5

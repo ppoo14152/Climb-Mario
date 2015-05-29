@@ -1,19 +1,25 @@
 #BlueJ class context
 comment0.params=lives
 comment0.target=Nivel03(int)
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Nivel03.\r\n\ \r\n
+comment0.text=\r\n\ Constructor\ de\ Nivel03,\ recibe\ como\ par\u00E1metro\ las\ vidas\ de\ Mario.\r\n\ \r\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=
 comment2.target=void\ putBricks()
+comment2.text=\r\n\ Coloca\ todos\ los\ ladrillos\ del\ juego\r\n\ \r\n
 comment3.params=
 comment3.target=void\ putEnemys()
+comment3.text=\r\n\ Coloca\ a\ todos\ los\ enemigos\ del\ nivel\ \r\n\ \r\n
 comment4.params=
 comment4.target=void\ putOthers()
+comment4.text=\r\n\ Coloca\ a\ mario,\ el\ contador\ de\ vidas\ y\ la\ bandera\r\n\ \r\n
 comment5.params=
 comment5.target=void\ stopSong()
+comment5.text=\r\n\ M\u00E9todo\ para\ detener\ la\ m\u00FAsica\ en\ caso\ de\ morir\ o\ pasar\ un\ nivel\r\n\ \r\n
 comment6.params=
 comment6.target=int\ getLives()
+comment6.text=\r\n\ \r\n\ M\u00E9todo\ que\ regresa\ cuantas\ vidas\ tiene\ Mario\r\n
 comment7.params=lives
 comment7.target=void\ setLives(int)
+comment7.text=\r\n\ M\u00E9todo\ para\ modificar\ las\ vidas\ de\ mario\r\n\ \r\n
 numComments=8

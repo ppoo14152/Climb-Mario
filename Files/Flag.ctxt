@@ -1,12 +1,17 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Flag()
+comment0.text=\r\n\ Constructor\ de\ la\ clase\ Flagg,\ se\ inicaliza\ la\ clase\ Mario\ en\ null\r\n\ \r\n
 comment1.params=
 comment1.target=void\ act()
+comment1.text=\r\n\ En\ el\ m\u00E9todo\ "Act"\ inicializamos\ la\ posici\u00F3n\ de\ mario\ y\ validamos\ si\ Mario\ toca\ la\ Bandera.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ marioGetsFlag()
+comment2.text=\r\n\ En\ este\ m\u00E9todo\ se\ revisa\ en\ que\ mundo\ estamos\ para\ parar\ la\ m\u00FAsica,\ se\ pone\ la\ canci\u00F3n\ de\ transici\u00F3n\ \r\n\ de\ nivel\ y\ dependiendo\ el\ nivel\ en\ el\ que\ estemos\ se\ avanza\ al\ siguiente.\r\n
 comment3.params=
 comment3.target=void\ initializeMario()
+comment3.text=\r\n\ M\u00E9todo\ para\ inicializar\ a\ mario,\ saber\ en\ donde\ esta\ y\ cuantas\ vidas\ tiene\ restantes\ para\ pasarlas\ al\ siguiente\ nivel\r\n\ \r\n
 comment4.params=
 comment4.target=boolean\ hitMario()
+comment4.text=\r\n\ M\u00E9todo\ para\ validar\ si\ Mario\ toca\ la\ bandera\r\n\ \r\n
 numComments=5

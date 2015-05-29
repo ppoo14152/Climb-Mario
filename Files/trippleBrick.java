@@ -22,15 +22,19 @@ public class trippleBrick extends Actor
     private int yBrick;
     private int moveCounter;
     
-    /**
-     * Act - do whatever the trippleBrick wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+     /**
+    * En el metodo "Act" movemos el ladrillo en caso que sea de tipo de movimiento
+    * 
+    */
     public void act() 
     {
         moveBrick();
     }
     
+     /**
+     * Constructor de la clase trippleBrick, recibe como parámetro si es fijo o está en movimiento, hacia 
+     * dónde se empieza a mover y cuantos pasos se debe mover
+     */
     public trippleBrick(int brickType, int movementWay, int steps)
     {
         type = brickType;
@@ -39,6 +43,11 @@ public class trippleBrick extends Actor
         
     }
     
+      
+     /**
+     * Este es el método cambiamos la dirección con la que se mueve el ladrillo
+     * 
+     */
     private void moveBrick()
     {
         if(direction == right)
@@ -46,7 +55,12 @@ public class trippleBrick extends Actor
         if(direction == left)
             moveLeft();
     }
-        
+    
+       
+     /**
+     * Con este método movemos el ladrillo hacia la derecha
+     * 
+     */
     private void moveRight()
     {   
         if(getX()<=850)
@@ -58,6 +72,10 @@ public class trippleBrick extends Actor
         
     }
     
+       /**
+     * Con este método movemos el ladrillo hacia la Izquierda
+     * 
+     */
     private void moveLeft()
     {
         if(getX()>=50)

@@ -23,10 +23,9 @@ public class quadraBrick extends Actor
     private int moveCounter;
     
     /**
-     * Act - do whatever the quadraBrick wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Constructor de la clase quadraBrick, recibe como parámetro si es fijo o está en movimiento, hacia 
+     * dónde se empieza a mover y cuantos pasos se debe mover
      */
-    
     public quadraBrick(int brickType, int movementWay, int steps)
     {
         type = brickType;
@@ -34,12 +33,20 @@ public class quadraBrick extends Actor
         distance = steps;
         
     }
-        
+    
+      /**
+    * En el metodo "Act" movemos el ladrillo en caso que sea de tipo de movimiento
+    * 
+    */
     public void act() 
     {
         moveBrick();
     }
     
+      /**
+     * Este es el método cambiamos la dirección con la que se mueve el ladrillo
+     * 
+     */
     private void moveBrick()
     {
         if(direction == right)
@@ -48,6 +55,10 @@ public class quadraBrick extends Actor
             moveLeft();
     }
         
+       /**
+     * Con este método movemos el ladrillo hacia la derecha
+     * 
+     */
     private void moveRight()
     {   
         if(getX()<=840)
@@ -59,6 +70,10 @@ public class quadraBrick extends Actor
         
     }
     
+          /**
+     * Con este método movemos el ladrillo hacia la Izquierda
+     * 
+     */
     private void moveLeft()
     {
         if(getX()>=60)

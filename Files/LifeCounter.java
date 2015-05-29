@@ -13,6 +13,10 @@ public class LifeCounter extends Actor
     private Mario mario;
     private int marioLives;
     
+     /**
+     * Constructor de la clase LifeCounter en la cual dibujamos la cara y el número de vidas restantes
+     * 
+     */
     public LifeCounter()
     {
         GreenfootImage lifeSign = new GreenfootImage(100,40); 
@@ -31,9 +35,13 @@ public class LifeCounter extends Actor
   
     }
    
+     /**
+     * En el método "Act" revisamos en que mundo estamos y actualizamos las vidas restantes
+     * 
+     */
     public void act() 
     {
-        initializeMario();
+      
         if(getWorld() instanceof Nivel01)
                 marioLives=Nivel01.getLives();
         if(getWorld() instanceof Nivel02)
@@ -43,17 +51,10 @@ public class LifeCounter extends Actor
         update();
     }
     
-    private void initializeMario()
-    {
-        if(mario == null)  
-        {  
-            if(!getWorld().getObjects(Mario.class).isEmpty())  
-            {  
-                mario = (Mario) getWorld().getObjects(Mario.class).get(0);
-            }  
-        }
-    }
-    
+     /**
+     * En el método actualizamos el número de vidas restantes.
+     * 
+     */
     private void update()
     {
         GreenfootImage lifeSign = new GreenfootImage(100,40); 

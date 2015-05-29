@@ -11,7 +11,7 @@ public class gameOver extends World
     GreenfootSound backgroundMusic = new GreenfootSound("gameOver.mp3");
     
     /**
-     * Constructor for objects of class greetings.
+     * Constructor de gameOver
      * 
      */
     public gameOver()
@@ -20,6 +20,10 @@ public class gameOver extends World
         backgroundMusic.play();
     }
     
+     /**
+     * En el Método "Act" espera a que se presione Enter para salir de la pantalla de game Over
+     * 
+     */
     public void act()
     {
         if(Greenfoot.isKeyDown("enter"))
@@ -29,6 +33,10 @@ public class gameOver extends World
         }
     }
     
+     /**
+     * Con este método se regresa la canción que se toca en esta pantalla
+     * 
+     */
     public GreenfootSound getSong()
     {
         return(backgroundMusic);

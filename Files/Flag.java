@@ -14,17 +14,29 @@ public class Flag extends Actor
     private World levelMusic;
     private static int marioLives;
     
+     /**
+     * Constructor de la clase Flagg, se inicaliza la clase Mario en null
+     * 
+     */
     public Flag()
     {
         mario=null;
     }
     
+     /**
+     * En el método "Act" inicializamos la posición de mario y validamos si Mario toca la Bandera.
+     * 
+     */
     public void act() 
     {
         initializeMario();
         marioGetsFlag();
     }
     
+     /**
+     * En este método se revisa en que mundo estamos para parar la música, se pone la canción de transición 
+     * de nivel y dependiendo el nivel en el que estemos se avanza al siguiente.
+     */
     public void marioGetsFlag() 
     {
         if(hitMario())
@@ -48,6 +60,10 @@ public class Flag extends Actor
         
     }
     
+      /**
+     * Método para inicializar a mario, saber en donde esta y cuantas vidas tiene restantes para pasarlas al siguiente nivel
+     * 
+     */
     private void initializeMario()
     {
         if(mario == null)  
@@ -65,6 +81,10 @@ public class Flag extends Actor
         }
     }
     
+     /**
+     * Método para validar si Mario toca la bandera
+     * 
+     */
      private boolean hitMario()
     {
         return(isTouching(Mario.class));

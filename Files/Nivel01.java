@@ -22,7 +22,7 @@ public class Nivel01 extends World
     private static int marioLives;
       
     /**
-     * Constructor for objects of class Nivel01.
+     * Constructor de Nivel01 de inicio de juego
      * 
      */
     public Nivel01()
@@ -35,6 +35,9 @@ public class Nivel01 extends World
         Greenfoot.setSpeed(40);           
     }
     
+     /**
+     * Constructor de Nivel01 en caso de perder una vida
+     */
     public Nivel01(int lives)
     {   
         super(900,600, 1);
@@ -52,6 +55,10 @@ public class Nivel01 extends World
         putBala();
     }
     
+     /**
+     * Coloca todos los ladrillos del juego
+     * 
+     */
     public void putBricks()
     {
         addObject(new trippleBrick(stillBrick, 0, 0), 600,240);
@@ -78,6 +85,10 @@ public class Nivel01 extends World
         
     }
     
+     /**
+     * Coloca a mario, el contador de vidas y la bandera
+     * 
+     */
     public void putOthers()
     {
         addObject(new Mario(floor), 100, floor);
@@ -86,6 +97,10 @@ public class Nivel01 extends World
         //addObject(new Flag(), 130, floor);
     }
     
+     /**
+     * Coloca a todos los enemigos del nivel 
+     * 
+     */
     public void putEnemys()
     {
         addObject(new Goomba(1), 300, 563);
@@ -98,7 +113,11 @@ public class Nivel01 extends World
         //addObject(new KingBoo(), 40, 450);
         addObject(new KingBoo(), 850, 400);
     }        
-        
+    
+     /**
+     * Con esta función cada 70 ciclos genera una nueva Bala al principio o al final 
+     * del mundo de manera aleatoria
+     */
     public void putBala()
     {
         counter++;
@@ -117,16 +136,28 @@ public class Nivel01 extends World
         }
     }
     
+     /**
+     * Método para detener la música en caso de morir o pasar un nivel
+     * 
+     */
     public static void stopSong()
     {
         backgroundMusic.stop();
     }
     
+     /**
+     * 
+     * Método que regresa cuantas vidas tiene Mario
+     */
     public static int getLives()
     {
         return(marioLives);
     }
     
+     /**
+     * Método para modificar las vidas de mario
+     * 
+     */
     public static void setLives(int lives)
     {
         marioLives=lives;

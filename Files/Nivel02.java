@@ -20,7 +20,7 @@ public class Nivel02 extends World
     private int Y;
     
     /**
-     * Constructor for objects of class Nivel02.
+     * Constructor de Nivel02, recibe como parámetro las vidas de Mario.
      * 
      */
     public Nivel02(int lives)
@@ -40,6 +40,10 @@ public class Nivel02 extends World
         putBala();
     }
     
+     /**
+     * Coloca todos los ladrillos del juego
+     * 
+     */
     public void putBricks()
     {
         addObject(new trippleBrick(stillBrick, 0, 0), 600,240);
@@ -64,6 +68,10 @@ public class Nivel02 extends World
         addObject(new quadraBrick(stillBrick, 0, 0), 200, 90);
     }
     
+     /**
+     * Coloca a todos los enemigos del nivel 
+     * 
+     */
     public void putEnemys()
     {
         addObject(new Goomba(1), 300, 530);
@@ -77,6 +85,10 @@ public class Nivel02 extends World
         addObject(new KingBoo(), 850, 400);
     }
     
+     /**
+     * Coloca a mario, el contador de vidas y la bandera
+     * 
+     */
     public void putOthers()
     {
         addObject(new Mario(floor), 100, floor);
@@ -85,6 +97,10 @@ public class Nivel02 extends World
         //addObject(new Flag(), 130, floor);
     }
     
+    /**
+     * Con esta función cada 70 ciclos genera una nueva Bala al principio o al final 
+     * del mundo de manera aleatoria
+     */
     public void putBala()
     {
         counter++;
@@ -102,17 +118,29 @@ public class Nivel02 extends World
             counter =0;
         }
     }
-        
+    
+     /**
+     * Método para detener la música en caso de morir o pasar un nivel
+     * 
+     */
     public static void stopSong()
     {
         backgroundMusic.stop();
     }
     
+      /**
+     * 
+     * Método que regresa cuantas vidas tiene Mario
+     */
     public static int getLives()
     {
         return(marioLives);
     }
     
+     /**
+     * Método para modificar las vidas de mario
+     * 
+     */
     public static void setLives(int lives)
     {
         marioLives=lives;

@@ -16,8 +16,8 @@ public class Nivel03 extends World
     private final int floor = 548;
     private static int marioLives;
 
-    /**
-     * Constructor for objects of class Nivel03.
+  /**
+     * Constructor de Nivel03, recibe como parámetro las vidas de Mario.
      * 
      */
     public Nivel03(int lives)
@@ -35,6 +35,10 @@ public class Nivel03 extends World
         backgroundMusic.play();
     }
     
+    /**
+     * Coloca todos los ladrillos del juego
+     * 
+     */
     public void putBricks()
     {
         addObject(new trippleBrick(stillBrick, 0, 0), 600,400);
@@ -50,11 +54,19 @@ public class Nivel03 extends World
        
     }
     
+    /**
+     * Coloca a todos los enemigos del nivel 
+     * 
+     */
     public void putEnemys()
     {
         addObject(new Bowser(), 700, floor-18);
     }
     
+     /**
+     * Coloca a mario, el contador de vidas y la bandera
+     * 
+     */
     public void putOthers()
     {
         addObject(new Mario(floor), 50, floor);
@@ -62,16 +74,28 @@ public class Nivel03 extends World
         addObject(new Flag(), 830, 460);
     }
     
+     /**
+     * Método para detener la música en caso de morir o pasar un nivel
+     * 
+     */
     public static void stopSong()
     {
         backgroundMusic.stop();
     }
     
+       /**
+     * 
+     * Método que regresa cuantas vidas tiene Mario
+     */
     public static int getLives()
     {
         return(marioLives);
     }
     
+     /**
+     * Método para modificar las vidas de mario
+     * 
+     */
     public static void setLives(int lives)
     {
         marioLives=lives;

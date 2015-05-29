@@ -21,6 +21,10 @@ public class greetings extends World
         super(900,600, 1);  
     }
     
+     /**
+     * En el Método "Act" espera a que se presione Enter para salir de la pantalla de "Greetings"
+     * 
+     */
     public void act()
     {
         backgroundMusic.play();
@@ -31,6 +35,10 @@ public class greetings extends World
         }
     }
     
+     /**
+     * Con este método se regresa la canción que se toca en esta pantalla
+     * 
+     */
     public GreenfootSound getSong()
     {
         return(backgroundMusic);
